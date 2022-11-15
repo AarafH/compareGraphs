@@ -2,7 +2,10 @@ import unittest
 import os
 from ast import literal_eval as make_tuple
 
-from .evaluation import evaluation_function
+try:
+    from .evaluation import evaluation_function
+except ImportError:
+    from evaluation import evaluation_function
 import json
 from evaluation_function_utils.errors import EvaluationException
 

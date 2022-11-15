@@ -2,3 +2,4 @@ sympy
 Pillow
 numpy
 scipy
+evaluation_function_utils
